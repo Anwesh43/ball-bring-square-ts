@@ -12,7 +12,7 @@ export const useAnimatedScale = () => {
             if (!animated) {
                 setAnimated(true)
                 const interval = setInterval(() => {
-                    setScale((prev : number) {
+                    setScale((prev : number) => {
                         if (prev > 1) {
                             setAnimated(false)
                             clearInterval(interval)
